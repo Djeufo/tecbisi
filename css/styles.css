@@ -189,17 +189,20 @@ section {
     */
 }
 
+input[type=text],
+button[type=submit] {
+    font-size: 2rem;
+}
+
 input[type=text] {
     padding: 6px;
     border: none;
-    font-size: 1.8rem;
     border-radius: 20px 0px 0px 20px;
 }
 
 button[type=submit] {
     padding: 6px;
     border: none;
-    font-size: 1.8rem;
     border-radius: 0px 20px 20px 0px;
     background-color: rgb( 26, 110, 33, 9);
     color: white;
@@ -209,16 +212,46 @@ button:hover {
     background: #823880;
 }
 
+@media screen and (max-width: 530px) {
+    input[type=text],
+    button[type=submit] {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
+    input[type=text],
+    button[type=submit] {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type=text],
+    button[type=submit] {
+        font-size: 1.0rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type=text],
+    button[type=submit] {
+        font-size: 0.30rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    input[type=text],
+    button[type=submit] {
+        font-size: 0.430rem;
+    }
     input[type=text] {
         border: none;
-        font-size: 0.8rem;
         border-radius: 20px 20px 20px 20px;
     }
     button[type=submit] {
         padding: 6px;
         margin-top: 5px;
-        font-size: 0.8rem;
         border-radius: 20px 20px 20px 20px;
         background-color: rgb( 26, 110, 33, 9);
         color: white;
