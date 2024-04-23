@@ -112,7 +112,7 @@ body {
 }
 
 #tutorials {
-    background-color: rgb(175, 172, 172, 0.1);
+    background-color: rgb(175, 172, 172, 0.5);
 }
 
 #team {
@@ -141,22 +141,6 @@ body {
 }
 
 
-/*Sticky effect*/
-
-
-/*TODO : check me*/
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky+.content {
-    padding-top: 60px;
-}
-
-
 /*header*/
 
 .firstHeader {
@@ -167,14 +151,11 @@ body {
 #about {
     background-color: rgb(17, 13, 18, 0.8);
     color: white;
-}
-
-h2 {
-    size: 1000rem;
+    align-items: center;
 }
 
 section {
-    height: 500px;
+    height: inherit;
 }
 
 
@@ -256,4 +237,127 @@ button:hover {
         background-color: rgb( 26, 110, 33, 9);
         color: white;
     }
+}
+
+
+/*_ tutorials containers _ start*/
+
+.tutorials_section_container {
+    content: "";
+    display: table;
+    clear: both;
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: inherit;
+    background-color: rgba(9, 151, 16, 0.0);
+    border-radius: 30px;
+}
+
+h1 {
+    /*font-family: 'Fjalla One', sans-serif;*/
+    font-family: "Sofia", sans-serif;
+    font-size: 5rem;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+    /*font-family: "Sofia", sans-serif;*/
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+
+/*
+.git_tutorials_ {
+    font-size: 3.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-shadow: 1.5px 1.5px 1.5px #5b074a;
+    align-items: center;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 6px solid rgb(19, 35, 16, 0.5);
+    margin: 3px;
+    float: left;
+    background-color: rgba(27, 68, 10, 0.5);
+    border-radius: 30px;
+}
+
+.git_tutorials_:hover {
+    border: 5px solid rgba(2, 58, 15, 0.9);
+    background-color: rgba(73, 11, 69, 0.3);
+}
+*/
+
+.git_tutorials,
+.java_tutorials,
+.springBoot_tutorials,
+.html_tutorials,
+.css_tutorials,
+.javascript_tutorials,
+.Github_tutorials {
+    font-size: 2.5rem;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    text-shadow: 1px 1px 1px #5b074a;
+    align-items: center;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: 5px solid rgb(19, 35, 16, 0.5);
+    margin: 3px;
+    float: left;
+    background-color: rgba(29, 28, 29, 0.7);
+    border-radius: 20px;
+}
+
+.git_tutorials:hover,
+.java_tutorials:hover,
+.springBoot_tutorials:hover,
+.html_tutorials:hover,
+.css_tutorials:hover,
+.javascript_tutorials:hover,
+.Github_tutorials:hover {
+    border: 5px solid rgb(17, 86, 6, 0.9);
+    background-color: rgb(24, 155, 12, 0.5);
+}
+
+.tuto_img {
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    .git_tutorials,
+    .java_tutorials,
+    .springBoot_tutorials,
+    .html_tutorials,
+    .css_tutorials,
+    .javascript_tutorials,
+    .Github_tutorials {
+        font-size: 2.0rem;
+        padding-left: 1px;
+        padding-right: 1px;
+        margin: 2px;
+    }
+    .tutorials_section_container {
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        background-color: rgba(9, 151, 16, 0.0);
+    }
+}
+
+
+/*_ tutorials containers _ end*/
+
+.linking {
+    text-decoration: none;
 }
