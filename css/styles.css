@@ -269,32 +269,6 @@ h3 {
     margin: 0 auto;
 }
 
-
-/*
-.git_tutorials_ {
-    font-size: 3.5rem;
-    font-family: 'Fjalla One', sans-serif;
-    color: white;
-    text-shadow: 1.5px 1.5px 1.5px #5b074a;
-    align-items: center;
-    text-align: center;
-    width: inherit;
-    height: inherit;
-    padding-left: 8px;
-    padding-right: 8px;
-    border: 6px solid rgb(19, 35, 16, 0.5);
-    margin: 3px;
-    float: left;
-    background-color: rgba(27, 68, 10, 0.5);
-    border-radius: 30px;
-}
-
-.git_tutorials_:hover {
-    border: 5px solid rgba(2, 58, 15, 0.9);
-    background-color: rgba(73, 11, 69, 0.3);
-}
-*/
-
 .git_tutorials,
 .java_tutorials,
 .springBoot_tutorials,
@@ -310,12 +284,11 @@ h3 {
     text-align: center;
     width: inherit;
     height: inherit;
-    padding-left: 8px;
-    padding-right: 8px;
-    border: 5px solid rgb(19, 35, 16, 0.5);
+    padding: 8px;
+    border: 0px solid rgb(19, 35, 16, 0.5);
     margin: 3px;
     float: left;
-    background-color: rgba(29, 28, 29, 0.7);
+    background-color: rgb(5, 99, 41);
     border-radius: 20px;
 }
 
@@ -326,8 +299,8 @@ h3 {
 .css_tutorials:hover,
 .javascript_tutorials:hover,
 .Github_tutorials:hover {
-    border: 5px solid rgb(17, 86, 6, 0.9);
-    background-color: rgb(24, 155, 12, 0.5);
+    border: 0px solid rgb(17, 86, 6, 0.9);
+    background-color: rgba(49, 51, 49, 0.5);
 }
 
 .tuto_img {
@@ -361,3 +334,14 @@ h3 {
 .linking {
     text-decoration: none;
 }
+
+
+/************************************************************/
+
+
+/*OUR TEAM*/
+
+.outTeamContainerDiv {}
+
+
+/***********************************************************/
