@@ -129,6 +129,7 @@ body {
 
 #contacts {
     background-color: rgb(175, 172, 172, 0.1);
+    stop-color: white;
 }
 
 
@@ -145,7 +146,9 @@ body {
 
 .firstHeader {
     text-align: center;
-    background-color: white;
+    background-color: rgba(13, 8, 15, 0.9);
+    border: 15px solid rgb(255, 255, 255);
+    border-radius: 100px;
 }
 
 #about {
@@ -333,6 +336,8 @@ h3 {
 
 .linking {
     text-decoration: none;
+    color: white;
+    font-family: bold;
 }
 
 
