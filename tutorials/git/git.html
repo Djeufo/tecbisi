@@ -13,6 +13,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/git.css">
 </head>
 
 <body>
@@ -49,7 +50,7 @@
         <div class="menu_left_nav_titles ">
             <div class="tab">
                 <h5>Git Tutorial</h5>
-                <a class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Git Home</a>
+                <a class="tablinks" onclick="openCity(event, 'gitHome')" id="defaultOpen">Git Home</a>
                 <a class="tablinks" onclick="openCity(event, 'Paris')">Git Get started</a>
                 <a class="tablinks" onclick="openCity(event, 'Tokyo')">Git Basic Concepts</a>
                 <a class="tablinks" onclick="openCity(event, 'London')">Git Installation</a>
@@ -83,7 +84,7 @@
         <div id="mySidenav" class="sidenav">
             <h5>Git Tutorial</h5>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a class="tablinks_1" onclick="openCity(event, 'Paris')">Git Home</a>
+            <a class="tablinks_1" onclick="openCity(event, 'gitHome')">Git Home</a>
             <a class="tablinks_1" onclick="openCity(event, 'Tokyo')">Tokyo</a>
             <a class="tablinks_1" onclick="openCity(event, 'London')">London</a>
             <a class="tablinks_1" onclick="openCity(event, 'Paris')">Paris</a>
@@ -113,9 +114,23 @@
 
         <!--TUTORIALS SPACE -->
         <div class="main_tutorials_content ">
-            <div id="London" class="tabcontent">
+            <div id="gitHome" class="tabcontent">
                 <h3>Git Home</h3>
-                <p>Git Home introduction</p>
+
+                <!---TEXT_CONTENT-->
+                <div class="gitHome_1">
+                    <p>Git is a version control system.</p>
+                    <p>Git helps you keep track of code changes.</p>
+                    <p>Git is used to collaborate on code with other team members.</p>
+                    <p>This tutorial covers using Git for project version control in distributed environments, for both web and non-web applications.</p>
+                </div>
+
+                <div class="gitHome_2">
+                    <p><b>Audience:</b> Beginners</p>
+                    <p><b>Purpose:</b> Learn the basic functionality of Git </p>
+                    <p><b>Outcome:</b> Achieve a moderate level of expertise in using Git </p>
+                    <p><b>Next Steps:</b> Use this foundation to advance to higher levels of Git proficiency</p>
+                </div>
             </div>
 
             <div id="Paris" class="tabcontent">
