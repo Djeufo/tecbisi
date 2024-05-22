@@ -12,14 +12,10 @@ h5 {
     font-size: 2em;
 }
 
-h1 {
-    font-weight: bold;
-}
-
 h1:hover {
     font-weight: bold;
-    color: white;
-    transition: 0.9s;
+    color: rgb(75, 4, 71);
+    /* transition: 0.9s;*/
 }
 
 
@@ -30,6 +26,9 @@ h1:hover {
 
 .home_button_tuto_page {
     float: left;
+}
+
+.home_button_tuto_page {
     color: white;
     background-color: rgb(50, 121, 50);
     font-size: 2rem;
@@ -39,21 +38,124 @@ h1:hover {
 
 .home_button_tuto_page:hover {
     background-color: rgb(6, 165, 86);
+    color: rgb(255, 255, 255);
 }
 
 .header_menu_div {
-    background-color: rgb(8, 14, 27, 0.5);
+    background-color: rgba(6, 68, 204, 0.2);
     padding: 15px;
     text-align: center;
     color: rgb(0, 0, 0);
     font-family: "Times New Roman", Times, serif;
     font-weight: bold;
+    display: flex;
+    width: 100%;
+}
+
+.header_tittle_div {
+    align-items: center;
+    width: 60%;
+    /* background-color: white;*/
+}
+
+.home_header_div,
+.home_header_div_1 {
+    width: 20%;
 }
 
 @media only screen and (max-width: 620px) {
     .home_button_tuto_page {
         font-size: 1.5rem;
         padding: 0.2rem;
+    }
+    .header_menu_div {
+        display: inline-block;
+    }
+    .home_header_div_1,
+    .header_tittle_div,
+    .home_header_div {
+        width: 100%;
+        padding: 0;
+    }
+    .header_menu_div {
+        padding: 5px;
+    }
+}
+
+
+/***********************/
+
+
+/*DROP DOWN TUTORIALS BUTTON ON HEADER DIV*/
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(50, 121, 50);
+    font-size: 2rem;
+    padding: 0.3rem;
+    border-radius: 15px;
+}
+
+.dropbtn:hover {
+    background-color: rgb(6, 165, 86);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: white;
+    border-radius: 15px;
+    float: right;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgb(143, 145, 143);
+    min-width: 130px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 1.6rem;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(64, 150, 67, 0.9);
+    color: white;
+    border-radius: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media only screen and (max-width: 620px) {
+    .home_button_tuto_page {
+        font-size: 1.2rem;
+        padding: 0.1rem;
+    }
+    .dropdown {
+        position: inherit;
+        display: inline-block;
+        border-radius: 15px;
+        float: none;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1080) {
+    .dropdown {
+        /*margin-top: -5%;*/
     }
 }
 
